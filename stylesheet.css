@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+ html {
+     scroll-behavior: smooth;
+}
+ .logo{
+     display:block;
+     margin:auto;
+}
+ nav ul{
+     height:35px;
+     margin:0 10;
+     width:auto;
+     text-align:left;
+}
+ h1{
+     font-size:4em;
+}
+ h2{
+     font-size:3em;
+     text-align: center;
+     margin:auto;
+     text-decoration: underline;
+}
+ h3{
+     font-size:2em;
+}
+ body{
+     margin:0;
+     font-family: Raleway;
+     line-height: 1.5;
+}
+ main{
+     margin:auto;
+     max-width:1600px;
+}
+ footer{
+     text-align:center;
+}
+ .container-fluid{
+     margin-top:75px;
+}
+ img {
+     margin: 0 auto;
+     display: block;
+}
+ img-fluid{
+     display:block;
+     max-width:100%;
+     height:auto;
+}
+ #resume{
+     margin-top: 100px;
+}
+ #contact{
+     margin-top: 100px;
+}
+ #portfolio{
+     margin-top: 100px;
+}
+ .col-sm h4 {
+     text-align: center;
+     font-weight:bold;
+     font-size:30px;
+}
+ .col-sm p {
+     text-align: center;
+     font-size: 16px;
+}
+ .col-xl h4 {
+     font-weight:bold;
+     text-align:left;
+     font-size:36px;
+     font-family:Raleway;
+}
+ .col-xl p {
+     text-align:left;
+     font-size: 20px;
+     font-family:Raleway;
+}
+ .highlight{
+     color:#5bc0de;
+}
+ .video-overlay{
+     position: absolute;
+     top: 35;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     background-color: rgba(255,255,255,.7);
+     z-index: 1;
+}
+ .header-content{
+     position: relative;
+     height: 100vh;
+     text-align: center;
+     display: block;
+     padding-top:40vh;
+     z-index:2;
+     margin:auto;
+}
+ .v-header{
+     height:100vh;
+     display:flex;
+     align-items:center;
+}
+ .container{
+     max-width:960px;
+     padding-left:1rem;
+     padding-right:1rem;
+     margin:auto;
+     text-align:center;
+}
+ .fullscreen-video-wrap{
+     position:absolute;
+     top:35;
+     left:0;
+     width:100%;
+     height:100vh;
+     overflow:hidden;
+}
+ .video-container{
+     position: absolute;
+     top: 0px;
+     left: 0px;
+}
+ #videoBG{
+     min-width:100%;
+     min-height:100%;
+}
+ .btn-read-more {
+     border: 3px solid #5bc0de;
+     background-color: white;
+     padding: 14px 28px;
+     color: black;
+     font-size: 16px;
+     cursor: pointer;
+     transition-duration: 0.5;
+     text-decoration: none;
+}
+ .btn-read-more:hover{
+     background-color:#5bc0de;
+     text-decoration: none;
+     color:white;
+}
+ .section{
+     padding: 20px 20px;
+     text-align:left;
+}
+ .section-b{
+     background:gray;
+     color: white;
+     text-align:right;
+}
+ .container-left{
+     text-align:left;
+}
+ .container-right{
+     text-align:right;
+}
+ @media (min-aspect-ratio:16/9){
+     #videoBG{
+         width:100%;
+         height:auto;
+    }
+}
+ @media (max-aspect-ratio:16/9){
+     #videoBG{
+         width:auto;
+         height:100%;
+    }
+}
+ @media (max-width: 767px){
+     #videoBG{
+         display:none;
+    }
+     body{
+         background: url('images/poster.jpg');
+         background-size:cover;
+    }
+}
